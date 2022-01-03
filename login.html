@@ -1,0 +1,25 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login form</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+  </head>
+  <body class="abc">
+    <div id="conteiner">
+      <form action="/action_page.php" method="GET" id="form">
+        <p>Login</p>
+        <label for="email">Email</label><br />
+        <input type="text" id="email" name="email" required /><br />
+        <label for="password">Password</label><br />
+        <input type="password" id="password" name="password" /><br /><br />
+        <label for="remember" class="remember">Remember me</label>
+        <input type="checkbox" id="remember" name="Remember" />
+        <button type="submit">Login</button>
+      </form>
+      <div id="error"></div>
+    </div>
+    <script src="login.js"></script>
+  </body>
+</html>
