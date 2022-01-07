@@ -9,8 +9,11 @@
     <meta content="" name="keywords" />
 
     <!-- Favicons -->
-    <link href="assets/img/icon2.2.jpg" rel="icon" />
-    <link href="assets/img/icon2.jpg" rel="apple-touch-icon" />
+    <link href="assets/img/treemainicon2-removebg-preview.png" rel="icon" />
+    <link
+      href="assets/img/treemainicon2-removebg-preview.png"
+      rel="apple-touch-icon"
+    />
 
     <!-- Google Fonts -->
     <link
@@ -38,7 +41,7 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
-
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <!-- =======================================================
   * Template Name: Sailor - v4.7.0
   * Template URL: https://bootstrapmade.com/sailor-free-bootstrap-theme/
@@ -46,8 +49,38 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+  <style>
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0af17e78;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+      border-radius: 10px;
+    }
 
-  <body style="background-color: rgb(105, 103, 104)">
+    .card:hover .overlay {
+      height: 100%;
+    }
+    .text {
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
+
+  <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
       <div class="container d-flex align-items-center">
@@ -71,7 +104,6 @@
                 <li><a href="blog.html">Our Blog</a></li>
               </ul>
             </li>
-            <li><a href="team.html">Community</a></li>
           </ul>
           <i class="bi bi-list mobile-nav-toggle"></i>
         </nav>
@@ -92,178 +124,118 @@
             </ol>
           </div>
         </div>
-        <br />
-        <br />
-        <div
-          class="container"
-          style="background-color: rgb(67, 185, 73); padding: 30px"
-        >
-          <div class="d-flex justify-content-between align-items-center">
-            <ol class="ul">
-              <li>
-                <a href="shoptreesandplants.html">Shop Trees and Plants</a>
-              </li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-              <li><a href="#"></a></li>
-            </ol>
-          </div>
-        </div>
       </section>
       <!-- End Breadcrumbs -->
-      <section id="hero2" class="d-flex align-items-center">
-        <div class="container" data-aos="zoom-out" data-aos-delay="100">
-          <h1><a href="#" style="font: bold"> Click here to shop!!!</a></h1>
-        </div>
-      </section>
-      <section class="buytreeheading">
-        <h3>Discount Offer</h3>
-      </section>
-      <section id="pricing" class="pricing">
-        <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="box featured">
-                <h3>Free</h3>
-                <h4><sup>$</sup>0<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li class="na">Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-              <div class="box featured">
-                <h3>Business</h3>
-                <h4><sup>$</sup>19<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-              <div class="box featured">
-                <h3>Developer</h3>
-                <h4><sup>$</sup>29<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li>Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-              <div class="box featured">
-                <span class="advanced">Advanced</span>
-                <h3>Ultimate</h3>
-                <h4><sup>$</sup>49<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li>Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
-                </div>
-              </div>
-            </div>
+      <section
+        id="hero3"
+        class="d-flex align-items-center"
+        style="background-image: url(assets/img/buytrees/mainbuy.jpg)"
+      >
+        <div
+          class=""
+          style="
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            bottom: 0;
+            top: 70px;
+            left: 50px;
+            right: 50px;
+            text-align: center;
+          "
+        >
+          <div class="container">
+            <h1 class="animate__animated animate__fadeInDown">
+              <a href="shoptreesandplants.html"
+                ><b
+                  style="
+                    color: rgb(9, 30, 36);
+                    background-color: rgb(26, 109, 10);
+                  "
+                  >Shop Trees and Plants</b
+                ></a
+              >
+            </h1>
           </div>
         </div>
       </section>
-      <section class="buytreeheading">
-        <h3>Best Selling</h3>
-      </section>
       <section id="pricing" class="pricing">
         <div class="container">
-          <div class="row">
-            <div class="col-lg-3 col-md-6">
-              <div class="box featured">
-                <h3>Free</h3>
-                <h4><sup>$</sup>0<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li class="na">Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+          <section>
+            <div data-aos="fade-down">
+              <h1 style="text-align: center; color: rgb(255, 81, 0)">
+                <b>Discount Offer</b>
+              </h1>
+            </div>
+          </section>
+          <div data-aos="fade-up">
+            <div class="row">
+              <div class="col-lg-4 col-md-6">
+                <div class="card" style="width: 18rem">
+                  <div class="overlay">
+                    <div class="text">50% Discount</div>
+                  </div>
+                  <img
+                    src="assets/img/alltrees/cherry.jpg"
+                    class="card-img-top"
+                    alt=""
+                    style="max-height: 195px"
+                  />
+                  <div class="card-body" style="align-content: center">
+                    <h5 class="">Cherry</h5>
+                    <a href="#" class="btn btn-primary">Buy now</a>
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 mt-4 mt-md-0">
-              <div class="box featured">
-                <h3>Business</h3>
-                <h4><sup>$</sup>19<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li class="na">Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+              <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                <div class="card" style="width: 18rem">
+                  <div class="overlay">
+                    <div class="text">Free</div>
+                  </div>
+                  <img
+                    src="assets/img/alltrees/koromcha.jpg"
+                    class="card-img-top"
+                    alt=""
+                    style="max-height: 195px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Koromcha</h5>
+                    <p class="card-text"></p>
+                    <a
+                      href="#"
+                      class="btn btn-primary"
+                      style="align-items: center"
+                      >Buy now</a
+                    >
+                  </div>
                 </div>
               </div>
-            </div>
 
-            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-              <div class="box featured">
-                <h3>Developer</h3>
-                <h4><sup>$</sup>29<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li>Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-3 col-md-6 mt-4 mt-lg-0">
-              <div class="box featured">
-                <span class="advanced">Advanced</span>
-                <h3>Ultimate</h3>
-                <h4><sup>$</sup>49<span> / month</span></h4>
-                <ul>
-                  <li>Aida dere</li>
-                  <li>Nec feugiat nisl</li>
-                  <li>Nulla at volutpat dola</li>
-                  <li>Pharetra massa</li>
-                  <li>Massa ultricies mi</li>
-                </ul>
-                <div class="btn-wrap">
-                  <a href="#" class="btn-buy">Buy Now</a>
+              <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                <div class="card" style="width: 18rem">
+                  <div class="overlay">
+                    <div class="text">45% Discount</div>
+                  </div>
+                  <img
+                    src="assets/img/alltrees/flower1.jpg"
+                    class="card-img-top"
+                    alt=""
+                    style="max-height: 195px"
+                  />
+                  <div class="card-body">
+                    <h5 class="card-title">Flower</h5>
+                    <p class="card-text"></p>
+                    <div>
+                      <a
+                        href="#"
+                        class="btn btn-primary"
+                        style="align-items: center"
+                        >Buy now</a
+                      >
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -388,6 +360,12 @@
       class="back-to-top d-flex align-items-center justify-content-center"
       ><i class="bi bi-arrow-up-short"></i
     ></a>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+      AOS.init({
+        duration: 1500,
+      });
+    </script>
 
     <!-- Vendor JS Files -->
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

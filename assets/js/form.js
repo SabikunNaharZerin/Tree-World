@@ -59,7 +59,7 @@ function show() {
     var email= document.getElementById("email").value;
     var comment=document.getElementById("comment").value;
 
-     firebase.database().ref('User/' + id).set({
+     firebase.database().ref('User/' + name).set({
             name : name,
             id : id,
             email : email,

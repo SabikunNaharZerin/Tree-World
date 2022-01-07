@@ -741,7 +741,8 @@ section {
 .heading {
   text-transform: uppercase;
   text-align: center;
-  color: rgb(24, 123, 216);
+  color: rgb(3, 250, 86);
+  font-weight: bolder;
 }
 @-webkit-keyframes animate-loading {
   0% {
@@ -759,7 +760,64 @@ section {
     transform: rotate(360deg);
   }
 }
+/*about list*/
+.blist {
+  background-image: url(../img/home/home8.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+.blist:before {
+  content: "";
+  background: rgba(5, 15, 107, 0.418);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.team {
+  background-image: url(../img/home/home7.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+.team:before {
+  content: "";
+  background: rgba(35, 48, 146, 0.445);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 /* projects list*/
+.list {
+  background-image: url(../img/home/home.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+.list:before {
+  content: "";
+  background: rgba(5, 15, 107, 0.507);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+
+.projectlist1:before {
+  content: "";
+  background: rgba(5, 15, 107, 0.507);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .list .content h3 {
   font-weight: 600;
   font-size: 26px;
@@ -777,7 +835,6 @@ section {
   margin-top: 35px;
 }
 .list .content ul i {
-  background: #fff;
   box-shadow: 0px 6px 15px rgba(16, 110, 234, 0.12);
   font-size: 24px;
   padding: 20px;
@@ -787,7 +844,7 @@ section {
 }
 .list .content ul h5 {
   font-size: 18px;
-  color: #555555;
+  color: #0eb632;
 }
 .list .content ul p {
   font-size: 15px;
@@ -874,7 +931,7 @@ section {
 #hero2 {
   width: 100%;
   height: 88vh;
-  background: url("../img/buytrees/buytree2.jpg") top left;
+  background: url("../img/buytrees/mainbuy.jpg") top left;
   background-size: cover;
   position: relative;
 }
@@ -1011,13 +1068,13 @@ div.gallery {
 #hero4 {
   width: 100%;
   height: 88vh;
-  background: url("../img/buytrees/buytree1.jpg") top left;
+  background: url("../img/buytrees/shopping.jpg") top left;
   background-size: cover;
   position: relative;
 }
 #hero4:before {
   content: "";
-  background: #31313167;
+  background: #191cd13d;
   position: absolute;
   bottom: 0;
   top: 0;
@@ -1347,6 +1404,21 @@ div.gallery {
 /*--------------------------------------------------------------
 # Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+  background-image: url(../img/home/back6.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+.portfolio:before {
+  content: "";
+  background: rgba(12, 31, 202, 0.246);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -1454,6 +1526,9 @@ div.gallery {
 /*--------------------------------------------------------------
 # Portfolio Details
 --------------------------------------------------------------*/
+.portfolio img {
+  border: 5px solid rgb(36, 82, 36);
+}
 .portfolio-details {
   padding-top: 40px;
 }
@@ -1676,11 +1751,43 @@ div.gallery {
 }
 
 /*--------------------------------------------------------------
-# Pricing
+# Pricing background-image: url(../img/home/back4.jpg);
 --------------------------------------------------------------*/
+/*buy trees8*/
+.card {
+  border-radius: 10px;
+  border: 0;
+}
+.card img {
+  overflow: hidden;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card {
+  transition: 0.3s;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px 0 rgba(10, 197, 10, 0.719),
+    0 6px 20px 0 rgba(0, 0, 0, 0.76);
+}
+.pricing {
+  background-image: url(../img/home/back4.jpg);
+  background-size: cover;
+  position: relative;
+  padding: 80px 0;
+}
+.pricing:before {
+  content: "";
+  background: rgba(17, 52, 168, 0.246);
+  position: absolute;
+  bottom: 0;
+  top: 0;
+  left: 0;
+  right: 0;
+}
 .pricing .box {
   padding: 20px;
-  background: #fff;
   text-align: center;
   box-shadow: 0px 0px 4px rgba(0, 0, 0, 0.12);
   border-radius: 5px;
@@ -1734,9 +1841,6 @@ div.gallery {
   text-decoration: line-through;
 }
 .pricing .btn-wrap {
-  margin: 20px -20px -20px -20px;
-  padding: 20px 15px;
-  background: #f8f8f8;
   text-align: center;
 }
 .pricing .btn-buy {
@@ -1994,11 +2098,12 @@ div.gallery {
 .blog .entry {
   padding: 30px;
   margin-bottom: 60px;
-  box-shadow: 0 4px 16px rgba(25, 31, 28, 0.616);
+  box-shadow: 0 4px 16px rgba(9, 121, 65, 0.972);
   border-radius: 10px;
+  background-color: #fff;
 }
 .blog .entry .entry-img {
-  max-height: 200px;
+  max-height: 180px;
   margin: -30px -30px 20px -30px;
   overflow: hidden;
   border-top-left-radius: 10px;
@@ -2043,7 +2148,7 @@ div.gallery {
   line-height: 0;
 }
 .blog .entry .entry-meta a {
-  color: #777777;
+  color: #177fc4;
   font-size: 10px;
   display: inline-block;
   line-height: 1;
@@ -2081,7 +2186,7 @@ div.gallery {
   margin: 20px 0;
 }
 .blog .entry .entry-content blockquote p {
-  color: #0a221b;
+  color: #000000;
   line-height: 24px;
   margin-bottom: 0;
   font-style: italic;
@@ -2108,11 +2213,11 @@ div.gallery {
   display: inline;
 }
 .blog .entry .entry-footer a {
-  color: #606f7e;
+  color: #000000;
   transition: 0.3s;
 }
 .blog .entry .entry-footer a:hover {
-  color: #d9232d;
+  color: #09b97f;
 }
 .blog .entry .entry-footer .cats {
   list-style: none;
@@ -2149,7 +2254,8 @@ div.gallery {
 .blog .blog-author {
   padding: 20px;
   margin-bottom: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  background-color: rgba(28, 179, 103, 0.596);
+  box-shadow: 0 4px 16px rgba(4, 163, 84, 0.753);
 }
 .blog .blog-author img {
   width: 120px;
@@ -2160,21 +2266,28 @@ div.gallery {
   font-size: 22px;
   margin-bottom: 0px;
   padding: 0;
-  color: #556270;
+  color: rgb(21, 116, 218);
 }
 .blog .blog-author .social-links {
   margin: 0 10px 10px 0;
 }
 .blog .blog-author .social-links a {
-  color: rgba(85, 98, 112, 0.5);
+  color: rgb(21, 116, 218);
   margin-right: 5px;
 }
 .blog .blog-author p {
   font-style: italic;
-  color: #b7b7b7;
+  color: #363434;
 }
 .blog .blog-comments {
   margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(28, 179, 103, 0.596);
+  box-shadow: 0 4px 16px rgba(4, 163, 163, 0.753);
+}
+.blog .blog-comments h4 {
+  color: rgb(255, 255, 255);
 }
 .blog .blog-comments .comments-count {
   font-weight: bold;
@@ -2188,6 +2301,7 @@ div.gallery {
 }
 .blog .blog-comments .comment .comment-img img {
   width: 60px;
+  border-radius: 50px;
 }
 .blog .blog-comments .comment h5 {
   font-size: 16px;
@@ -2195,15 +2309,15 @@ div.gallery {
 }
 .blog .blog-comments .comment h5 a {
   font-weight: bold;
-  color: #444444;
+  color: #ffffff;
   transition: 0.3s;
 }
 .blog .blog-comments .comment h5 a:hover {
-  color: #d9232d;
+  color: #1fa89d;
 }
 .blog .blog-comments .comment h5 .reply {
   padding-left: 10px;
-  color: #556270;
+  color: #ffffff;
 }
 .blog .blog-comments .comment h5 .reply i {
   font-size: 20px;
@@ -2211,23 +2325,27 @@ div.gallery {
 .blog .blog-comments .comment time {
   display: block;
   font-size: 14px;
-  color: #6b7b8d;
+  color: #ffffff;
   margin-bottom: 5px;
 }
 .blog .blog-comments .comment.comment-reply {
   padding-left: 40px;
 }
 .blog .blog-comments .reply-form {
+  background-color: rgba(8, 116, 57, 0.678);
   margin-top: 30px;
   padding: 30px;
-  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 16px rgb(3, 151, 250);
 }
 .blog .blog-comments .reply-form h4 {
-  font-weight: bold;
+  font-weight: bolder;
+  color: #04b8ff;
   font-size: 22px;
 }
 .blog .blog-comments .reply-form p {
   font-size: 14px;
+  color: #f16508e7;
+  font-display: bold;
 }
 .blog .blog-comments .reply-form input {
   border-radius: 4px;
@@ -2236,7 +2354,7 @@ div.gallery {
 }
 .blog .blog-comments .reply-form input:focus {
   box-shadow: none;
-  border-color: #e9797f;
+  border-color: #42c487;
 }
 .blog .blog-comments .reply-form textarea {
   border-radius: 4px;
@@ -2245,7 +2363,7 @@ div.gallery {
 }
 .blog .blog-comments .reply-form textarea:focus {
   box-shadow: none;
-  border-color: #e9797f;
+  border-color: #62e67e;
 }
 .blog .blog-comments .reply-form .form-group {
   margin-bottom: 25px;
@@ -2254,10 +2372,10 @@ div.gallery {
   border-radius: 4px;
   padding: 10px 20px;
   border: 0;
-  background-color: #556270;
+  background-color: #557062;
 }
 .blog .blog-comments .reply-form .btn-primary:hover {
-  background-color: #606f7e;
+  background-color: #5c6975;
 }
 .blog .blog-pagination {
   color: #8795a4;
