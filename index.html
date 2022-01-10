@@ -57,6 +57,36 @@
   * License: https://bootstrapmade.com/license/
   ======================================================== -->
   </head>
+  <style>
+    .overlay {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: #0ac3f1b0;
+      overflow: hidden;
+      width: 100%;
+      height: 0;
+      transition: 0.5s ease;
+      border-radius: 10px;
+    }
+
+    .card:hover .overlay {
+      height: 100%;
+    }
+    .text {
+      color: rgb(255, 255, 255);
+      font-weight: bolder;
+      font-size: 20px;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+      transform: translate(-50%, -50%);
+      text-align: center;
+    }
+  </style>
   <body>
     <!-- ======= Header ======= -->
     <header id="header" class="fixed-top d-flex align-items-center">
@@ -213,213 +243,444 @@
           background-image: url(assets/img/home/home5.jpg);
           background-size: cover;
           box-shadow: 0 4px 16px rgba(25, 31, 28, 0.616);
+          border: rgb(228, 215, 215);
         "
       >
-        <section style="text-align: center; position: relative;transition: 0.5s;">
-          <a href="blog.html">
-            <h2>
-              <b
-                ><div
-                  data-aos="fade-down"
-                  data-aos-easing="linear"
-                  data-aos-duration="1500"
-                >
-                  See Our Blog
-                </div>
-              </b>
-            </h3>
-          </a>
-        </section>
-        <div data-aos="fade-up" data-aos-duration="3000">
-          <section id="blog" class="blog">
-            <div class="container" data-aos="fade-up">
+        <section style="padding-left: 5%;padding-right: 5%;padding-top: 5%;padding-bottom: 5%;">
+          <section id="home-blog" class="home-blog" >
+            <div>
+              <section style="text-align: center; position: relative;transition: 0.5s;">
+                <a href="projects.html">
+                  <h2 style="color: rgb(209, 88, 8);">
+                    <b
+                      ><div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
+                        See Our Projects
+                      </div>
+                    </b>
+                  </h3>
+                </a>
+              </section>
+              <br>
+            </div>
+            <div id="boxshad" class="container" data-aos="fade-up">
               <div class="row">
-                <div class="col-lg-4 entries">
-                  <article class="entry">
-                    <div class="entry-img">
-                      <img
-                        src="assets/img/blog/blog-1.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-
-                    <h2 class="entry-title">
-                      <a href="blog-single.html"
-                        >The Greeny Area</a
-                      >
-                    </h2>
-
-                    <div class="entry-meta">
-                      <ul>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-person"></i>
-                          <a href="blog-single.html">Zerin</a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-clock"></i>
-                          <a href="blog-single.html"
-                            ><time datetime="2020-01-01">Jan 1, 2020</time></a
-                          >
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-chat-dots"></i>
-                          <a href="blog-single.html">12 Comments</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="entry-content">
-                      <p>A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
-                      </p>
-                      <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
-                      </div>
-                    </div>
-                  </article>
-                  <!-- End blog entry -->
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/projectslists/projectlist1.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(219, 121, 8, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">One tree matters,Australia</h5>
                 </div>
-                <!-- End blog entries list -->
-                <!-- End blog sidebar -->
-                <div class="col-lg-4 entries">
-                  <article class="entry">
-                    <div class="entry-img">
-                      <img
-                        src="assets/img/blog/blog-5.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-
-                    <h2 class="entry-title">
-                      <a href="blog-single.html"
-                        >Planting trees</a
-                      >
-                    </h2>
-
-                    <div class="entry-meta">
-                      <ul>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-person"></i>
-                          <a href="blog-single.html">Zerin</a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-clock"></i>
-                          <a href="blog-single.html"
-                            ><time datetime="2020-01-01">Jan 1, 2020</time></a
-                          >
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-chat-dots"></i>
-                          <a href="blog-single.html">12 Comments</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="entry-content">
-                      <p>
-                        A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
-                      </p>
-                      <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
-                      </div>
-                    </div>
-                  </article>
-                  <!-- End blog entry -->
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/projectslists/projectlist6.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(230, 106, 6, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">Food gardens nourish communities, learners</h5>
                 </div>
-                <div class="col-lg-4 entries">
-                  <article class="entry">
-                    <div class="entry-img">
-                      <img
-                        src="assets/img/blog/blog-9.jpg"
-                        alt=""
-                        class="img-fluid"
-                      />
-                    </div>
-
-                    <h2 class="entry-title">
-                      <a href="blog-single.html"
-                        >Green house Effect</a
-                      >
-                    </h2>
-
-                    <div class="entry-meta">
-                      <ul>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-person"></i>
-                          <a href="blog-single.html">Zerin</a>
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-clock"></i>
-                          <a href="blog-single.html"
-                            ><time datetime="2020-01-01">Jan 1, 2020</time></a
-                          >
-                        </li>
-                        <li class="d-flex align-items-center">
-                          <i class="bi bi-chat-dots"></i>
-                          <a href="blog-single.html">12 Comments</a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="entry-content">
-                      <p>
-                        A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
-                      </p>
-                      <div class="read-more">
-                        <a href="blog-single.html">Read More</a>
-                      </div>
-                    </div>
-                  </article>
-                  <!-- End blog entry -->
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/projectslists/projectlist7.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(224, 165, 3, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">School food hubs to multiply EduPlant impact</h5>
                 </div>
               </div>
             </div>
+            <br>
+            <div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+            <button class="btn btn-primary" style="background-color: darkslategray;"><a
+              href="projects.html"
+              style="color: rgb(255, 255, 255);"
+              >View All</a></button></div>
           </section>
-        </div>
-        <div>
-          <section style="text-align: center; position: relative;transition: 0.5s;">
-            <a href="projects.html">
-              <h2>
-                <b
-                  ><div
-                    data-aos="fade-down"
-                    data-aos-easing="linear"
-                    data-aos-duration="1500"
-                  >
-                    See Our Projects
+        </section>
+        <section style="padding-left: 5%;padding-right: 5%;padding-top: 5%;padding-bottom: 5%;">
+          <section id="home-blog" class="home-blog" >
+            <section style="text-align: center; position: relative;transition: 0.5s;">
+              <a href="blog.html">
+                <h2 style="color: rgb(209, 88, 8);">
+                  <b
+                    ><div
+                      data-aos="fade-down"
+                      data-aos-easing="linear"
+                      data-aos-duration="1500"
+                    >
+                      See Our Blog
+                    </div>
+                  </b>
+                </h3>
+              </a>
+            </section>
+            <div data-aos="fade-up" data-aos-duration="3000">
+              <section id="blog" class="blog">
+                <div class="container" data-aos="fade-up">
+                  <div class="row">
+                    <div class="col-lg-4 entries">
+                      <article class="entry">
+                        <div class="entry-img">
+                          <img
+                            src="assets/img/blog/blog-1.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <h2 class="entry-title">
+                          <a href="blog-single.html"
+                            >The Greeny Area</a
+                          >
+                        </h2>
+
+                        <div class="entry-meta">
+                          <ul>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-person"></i>
+                              <a href="blog-single.html">Zerin</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-clock"></i>
+                              <a href="blog-single.html"
+                                ><time datetime="2020-01-01">Jan 1, 2020</time></a
+                              >
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-chat-dots"></i>
+                              <a href="blog-single.html">12 Comments</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="entry-content">
+                          <p>A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
+                          </p>
+                          <div class="read-more">
+                            <a href="blog-single.html">Read More</a>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- End blog entry -->
+                    </div>
+                    <!-- End blog entries list -->
+                    <!-- End blog sidebar -->
+                    <div class="col-lg-4 entries">
+                      <article class="entry">
+                        <div class="entry-img">
+                          <img
+                            src="assets/img/blog/blog-5.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <h2 class="entry-title">
+                          <a href="blog-single.html"
+                            >Planting trees</a
+                          >
+                        </h2>
+
+                        <div class="entry-meta">
+                          <ul>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-person"></i>
+                              <a href="blog-single.html">Zerin</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-clock"></i>
+                              <a href="blog-single.html"
+                                ><time datetime="2020-01-01">Jan 1, 2020</time></a
+                              >
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-chat-dots"></i>
+                              <a href="blog-single.html">12 Comments</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="entry-content">
+                          <p>
+                            A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
+                          </p>
+                          <div class="read-more">
+                            <a href="blog-single.html">Read More</a>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- End blog entry -->
+                    </div>
+                    <div class="col-lg-4 entries">
+                      <article class="entry">
+                        <div class="entry-img">
+                          <img
+                            src="assets/img/blog/blog-9.jpg"
+                            alt=""
+                            class="img-fluid"
+                          />
+                        </div>
+
+                        <h2 class="entry-title">
+                          <a href="blog-single.html"
+                            >Green house Effect</a
+                          >
+                        </h2>
+
+                        <div class="entry-meta">
+                          <ul>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-person"></i>
+                              <a href="blog-single.html">Zerin</a>
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-clock"></i>
+                              <a href="blog-single.html"
+                                ><time datetime="2020-01-01">Jan 1, 2020</time></a
+                              >
+                            </li>
+                            <li class="d-flex align-items-center">
+                              <i class="bi bi-chat-dots"></i>
+                              <a href="blog-single.html">12 Comments</a>
+                            </li>
+                          </ul>
+                        </div>
+
+                        <div class="entry-content">
+                          <p>
+                            A tree is a tall plant with a trunk and branches made of wood. Trees can live for many years. The oldest tree ever discovered is approximately 5,000 years old and the oldest tree from the UK is about 1,000. The four main parts of a tree are the roots, the trunk, the branches, and the leaves.
+                          </p>
+                          <div class="read-more">
+                            <a href="blog-single.html">Read More</a>
+                          </div>
+                        </div>
+                      </article>
+                      <!-- End blog entry -->
+                    </div>
                   </div>
-                </b>
-              </h3>
-            </a>
+                </div>
+              </section>
+            </div>
+            <div style="text-align: center;" data-aos="fade-up" data-aos-delay="100">
+            <button class="btn btn-primary" style="background-color: darkslategray;"><a
+              href="blog.html"
+              style="color: rgb(255, 255, 255);"
+              >View All</a></button></div>
           </section>
-          <br>
-        <div id="boxshad" class="container" data-aos="fade-up">
-          <div class="row">
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-              <img
-                src="assets/img/projectslists/projectlist1.jpg"
-                class="img-fluid"
-                alt=""
-              />
+        </section>
+        <section style="padding-left: 5%;padding-right: 5%;padding-top: 5%;padding-bottom: 5%;">
+          <section id="home-blog" class="home-blog" >
+            <div>
+              <section style="text-align: center; position: relative;transition: 0.5s;">
+                <a href="buytrees.html">
+                  <h2 style="color: rgb(209, 88, 8);">
+                    <b
+                      ><div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
+                        See Our Tree Collection
+                      </div>
+                    </b>
+                  </h3>
+                </a>
+              </section>
+              <br>
             </div>
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-              <img
-                src="assets/img/projectslists/projectlist6.jpg"
-                class="img-fluid"
-                alt=""
-              />
+            <div id="boxshad" class="container" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/alltrees/flower.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(219, 121, 8, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">Flower Tree</h5>
+                </div>
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/alltrees/avocado.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(230, 106, 6, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">Avocado Tree</h5>
+                </div>
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/alltrees/dalim.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(224, 165, 3, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;">Dalim Tree</h5>
+                </div>
+              </div>
             </div>
-            <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
-              <img
-                src="assets/img/projectslists/projectlist7.jpg"
-                class="img-fluid"
-                alt=""
-              />
+            <br>
+            <div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+            <button class="btn btn-primary" style="background-color: darkslategray;"><a
+              href="buytrees.html"
+              style="color: rgb(255, 255, 255);"
+              >View All</a></button></div>
+          </section>
+        </section>
+        <section style="padding-left: 5%;padding-right: 5%;padding-top: 5%;padding-bottom: 5%;">
+          <section id="home-blog" class="home-blog" >
+            <div>
+              <section style="text-align: center; position: relative;transition: 0.5s;">
+                <a href="Festivals.html">
+                  <h2 style="color: rgb(209, 88, 8);">
+                    <b
+                      ><div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
+                        Our Tree Festivals
+                      </div>
+                    </b>
+                  </h3>
+                </a>
+              </section>
+              <br>
             </div>
-          </div>
-        </div>
-        </div>
+            <div id="boxshad" class="container" data-aos="fade-up">
+              <div class="row">
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/festivals/festivals3.png"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(219, 121, 8, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;"><div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+                    <button class="btn btn-primary" style="background-color: rgb(10, 216, 130);"><a
+                      href="buytickets.html"
+                      style="color: rgb(255, 255, 255);"
+                      >Buy Tickets</a></button></div></h5>
+                </div>
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/festivals/gardenfest.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(230, 106, 6, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;"><div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+                    <button class="btn btn-primary" style="background-color: rgb(10, 216, 130);"><a
+                      href="buytickets.html"
+                      style="color: rgb(255, 255, 255);"
+                      >Buy Tickets</a></button></div></h5>
+                </div>
+                <div class="col-lg-4" data-aos="fade-right" data-aos-delay="100">
+                  <img
+                    src="assets/img/festivals/new.jpg"
+                    class="img-fluid"
+                    alt=""
+                    style="box-shadow:0 4px 16px rgba(224, 165, 3, 0.753);"
+                  />
+                  <h5 style="font-weight: bolder;padding-top:10px;color: rgb(10, 228, 199);font-size: 20px;text-align: center;"><div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+                    <button class="btn btn-primary" style="background-color: rgb(10, 216, 130);"><a
+                      href="buytickets.html"
+                      style="color: rgb(255, 255, 255);"
+                      >Buy Tickets</a></button></div></h5>
+                </div>
+              </div>
+            </div>
+            <br>
+            <div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+            <button class="btn btn-primary" style="background-color: darkslategray;"><a
+              href="Festivals.html"
+              style="color: rgb(255, 255, 255);"
+              >View All</a></button></div>
+          </section>
+        </section>
+        <section style="padding-left: 5%;padding-right: 5%;padding-top: 5%;padding-bottom: 5%;">
+          <section id="home-blog" class="home-blog" >
+            <div>
+              <section style="text-align: center; position: relative;transition: 0.5s;">
+                <a href="about.html">
+                  <h2 style="color: rgb(209, 88, 8);">
+                    <b
+                      ><div
+                        data-aos="fade-down"
+                        data-aos-easing="linear"
+                        data-aos-duration="1500"
+                      >
+                        About Us
+                      </div>
+                    </b>
+                  </h3>
+                </a>
+              </section>
+              <br>
+            </div>
+            <div id="boxshad" class="container" data-aos="fade-up">
+              <div data-aos="fade-up">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6">
+                    <div class="card" style="width: 18rem">
+                      <div class="overlay">
+                        <div><p style="padding:3px;padding-top: 2px;color: white;">critical is restoring the habitat with native plants is essential to reversing the damage from deforestation.  This work builds ecosystem resiliency against invasive species and increases the resources that endemic and threatened species need to rebound and reach viable population numbers.</p></div>
+                      </div>
+                      <img
+                        src="assets/img/About/approach.jpg"
+                        class="card-img-top"
+                        alt=""
+                        style="max-height: 500px;border-radius: 10px;"
+                      />
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 col-md-6 mt-4 mt-md-0">
+                    <div class="card" style="width: 18rem">
+                      <div class="overlay">
+                        <div style="padding:3px;padding-top: 2px;color: white;"><p>we restore links between fragmented habitats to help rescue endangered and threatened species from extinction. In addition, the forests we create help fight climate change. As the native trees in our wildlife corridors grow back, they absorb carbon dioxide and create oxygen. Importantly, we work with local conservation groups who have the knowledge and experience to effectively restore forests, engage with local communities, and monitor results</p></div>
+                      </div>
+                      <img
+                        src="assets/img/About/bird1.jpg"
+                        class="card-img-top"
+                        alt=""
+                        style="max-height: 500px;border-radius: 10px;"
+                      />
+                      
+                    </div>
+                  </div>
+    
+                  <div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+                    <div class="card" style="width: 18rem">
+                      <div class="overlay">
+                        <div ><p style="padding:3px;padding-top: 2px;color: white;">Saving Nature works with local non-governmental organizations, young scientists, and the scientific community.  Through this collaboration, we develop fresh insights and best practices for monitoring, modeling, and sharing front-line lessons.  Our goal is to improve the knowledge base for restoring habitat, recolonizing species, and protecting ecosystem services for local communities. Therefore, we don’t own any land. Instead we raise money to help our local partners buy and restore land.</p></div>
+                      </div>
+                      <img
+                        src="assets/img/About/jobfacilities.jpg"
+                        class="card-img-top"
+                        alt=""
+                        style="max-height: 500px;border-radius: 10px;"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+            <br>
+            <div style="text-align: center;" data-aos="fade-right" data-aos-delay="100">
+            <button class="btn btn-primary" style="background-color: darkslategray;"><a
+              href="about.html"
+              style="color: rgb(255, 255, 255);"
+              >View All</a></button></div>
+          </section>
+        </section>
       </section>
     </main>
     <!-- End #main -->

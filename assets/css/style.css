@@ -2088,6 +2088,15 @@ div.gallery {
     transform: rotate(360deg);
   }
 }
+/*home blog*/
+.home-blog {
+  padding: 40px 0 20px 0;
+  margin-bottom: 30px;
+  padding: 20px;
+  margin-bottom: 30px;
+  background-color: rgba(28, 179, 103, 0.596);
+  box-shadow: 0 4px 16px rgba(4, 163, 163, 0.753);
+}
 
 /*--------------------------------------------------------------
 # Blog
