@@ -1,76 +1,80 @@
-function search() 
-{
-    var id= document.getElementById("id1").value;
+function view2(_n,_e,_m,_w){
+  var a=document.getElementById('yo');
+  var div=document.createElement('div');
 
-firebase.database().ref('User/'+ id).once('value').then(function(snapshot) {
-                if (snapshot.exists()) {
-                     var name_ = snapshot.val().name;
-                     var id_ = snapshot.val().id;
-                    var mail_ = snapshot.val().email;
-                      document.getElementById("name").value = name_;
-                      document.getElementById("id").value = id_;
-                      document.getElementById("email").value =  mail_;
-                }
-                else
-                {
 
-                }
-        }, function(error) {  ////promise
-            if (error) {
 
-            } else {
-
-            }
-          });
-}
-
-function delete_()
-{
-    var del_user = document.getElementById("for_del").value;
-    let userRef = firebase.database().ref('User/' + del_user);
-    userRef.remove();
-    alert("Successfully Removed");
-}
-function all_student_view()
-{
+  div.style.padding = "10px";
+  div.style.margin = "10px";
+  div.style.backgroundColor = "#fff";
+  div.style.borderRadius = "2%";
+  
+    div.innerHTML = `<h4 style='color: rgb(54, 52, 52); font-weight: ; "font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;"'>${_n}</h4> <h6 style='color: rgb(54, 52, 52); font-size: medium'> ${_m}<br></h6>`
+    a.appendChild(div);
+  
+    }
+  function view(){
 
     firebase.database().ref('User/').once('value').then(function(snapshot) {
-        snapshot.forEach(function(child) {
-            var m= child.val().id;
-            var n= child.val().name;
-            var o= child.val().email;
-            alert(m + " "+ n+ " "+ o);
+    snapshot.forEach(function(child) {
+    var n = child.val().name;
+    var e = child.val().email;
+    var m = child.val().comment;
+    var w =child.val().website;
+    view2(n,e,m,w);
+      
 
+      
+    });      
+    
+            
+     }, function(error) {
+         if (error) {
 
-        });
-        }, function(error) {
-            if (error) {
-            } else {
+         } else {
 
-            }
-          });
-
+         }
+       });
 }
+  
+
 
 function show() {
 
-    var name = document.getElementById("name").value;
-    var id= document.getElementById("id").value;
-    var email= document.getElementById("email").value;
-    var comment=document.getElementById("comment").value;
+  var name = document.getElementById("name").value;
+  var website= document.getElementById("website").value;
+  var email= document.getElementById("email").value;
+  var comment=document.getElementById("comment").value;
+  if(name==""||email==""||website==""||comment=="")
+  {
+    alert('Provide all information');
+  }
 
-     firebase.database().ref('User/' + name).set({
-            name : name,
-            id : id,
-            email : email,
-            comment : comment
-          }, function(error) {
-            if (error) {
-              // The write failed...
-            } else {
-                alert("DONE");
-              
-           
-            }
-          });
- } 
+  else
+  {
+    firebase.database().ref('User/' + name).set({
+      comment: comment,
+      name : name,
+      website : website,
+      email : email
+      
+    }, function(error) {
+      if (error) {
+        // The write failed...
+        alert("Not done");
+      } else {
+          view();
+          document.getElementById("name").value="";
+          document.getElementById("email").value="";
+          document.getElementById("comment").value="";
+          document.getElementById("website").value="";
+          alert("DONE");
+         location.reload();
+         
+     
+      }
+    });
+  }
+} 
+
+view();

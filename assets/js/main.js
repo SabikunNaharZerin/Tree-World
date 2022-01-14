@@ -29,7 +29,7 @@ function showb() {
         });
 } 
 
-function view2(_n,_e,_m,_w){
+/*function view2(_n,_e,_m,_w){
   var a=document.getElementById('yo');
   var div=document.createElement('div');
 
@@ -101,7 +101,7 @@ function show() {
             }
           });
         }
- } 
+ } */
 
 
 (function() {
@@ -281,3 +281,4 @@ function show() {
   }
 
 })()
+view();
